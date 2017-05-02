@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5FFFA"
+    android:gravity="center"
+    tools:context="com.example.nasryn_kingman.eazegraph.LineChartFragment"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Line Chart"
+        android:layout_marginTop="2dp"
+        android:textStyle="normal|bold"
+        android:layout_margin="50dp"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/textView2" />
+
+    <org.eazegraph.lib.charts.ValueLineChart
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linechart"
+        android:layout_width="326dp"
+        android:layout_height="160dp"
+        app:egUseCubic="true"
+        app:egUseOverlapFill="true"
+        app:egCurveSmoothness="0.4"
+        app:egIndicatorLineColor="#FE6DA8"
+        app:egLegendHeight="40dp"
+        app:egShowStandardValue="true"/>
+</LinearLayout>
